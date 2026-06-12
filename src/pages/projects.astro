@@ -5,47 +5,36 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Research interests</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+
+   <div class="mb-10 text-justify">
+    I am passionate about understanding how species evolve using genomics approaches. 
+    More specifically, my interest lies in transposable elements (the jumping genes) and how they are sometimes repurposed by host genomes, 
+    a process known as molecular co-option or domestication. </br>
+    I am also fascinated by noncoding RNAs, the molecules that control gene expression. 
+    Together, mobile elements and noncoding RNAs form a dynamic network of interactions, often leading to what I call intragenomic conflicts.</br>
+    Currently, I’m a ​Marie Skłodowska-Curie Fellow in <a href="https://www.demendozalab.com/" style="color: #0f4c5c; text-decoration: underline;" target="_blank"> Alex de Mendoza’s lab </a> at Queen Mary University of London, UK. 
+    My project is investigating the role of small RNAs in immunity and regulation of giant endogenous viral elements in eukaryotes (#SMALLGIANT).
+
+   </div>
+
+  <img
+  src="/smalgiant.png"
+  alt="Overview of Amoebidium genome architecture"
+  class="my-8 rounded-lg"
+/>
+
+
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Current Collaborations</div>
   </div>
+  
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+<div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Past Projects</div>
+  </div>
+  
 </BaseLayout>

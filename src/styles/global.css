@@ -1,3 +1,184 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+.publications-list ul {
+  margin-left: 1.25rem;
+}
+
+.publications-list li {
+  margin-bottom: 1.5rem;
+}
+
+.pub-year {
+  color: #630249;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.publications-list a {
+  color: #0f4c5c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publications-list a:hover {
+  text-decoration: underline;
+}
+
+.news-item {
+  margin-bottom: 2rem;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.news-item h2 {
+  color:var(--wine);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.news-item p {
+  color: #444;
+  line-height: 1.6;
+}
+
+:root {
+  --wine:  #630249;
+  --petrol: #0f4c5c;
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+}
+
+.blog-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.blog-content {
+  max-width: 750px;
+}
+
+.blog-list .news-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.blog-list p {
+  max-width: 750px;
+  line-height: 1.8;
+}
+
+.blog-list h2 {
+  color: var(--wine);
+}
+
+.essay-separator {
+  width: 100%;
+  max-width: 520px;
+  height: 1px;
+  margin: 3rem auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(74, 13, 36, 0.25),
+    transparent
+  );
+  position: relative;
+}
+
+.essay-separator::after {
+  content: "✦";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -52%);
+  background: white;
+  padding: 0 1rem;
+  color: var(--wine);
+  font-size: 1rem;
+}
+
+.prose p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.prose blockquote {
+  border-left: 3px solid --wine;
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: #4a0d24;
+}
+
+.prose a {
+  color: #0f4c5c;
+}
+
+.prose p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.author-box {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10rem;
+  align-items: start;
+  margin: 2rem 0 3rem;
+  padding: 1.5rem;
+  border-left: 4px solid var(--wine);
+  background: #fafafa;
+}
+
+.author-photo {
+  width: 200%;
+  max-width: 900px;
+  border-radius: 12px;
+}
+
+.author-box h2 {
+  color: var(--wine);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.author-box p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.author-box blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.author-box blockquote span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--wine);
+  font-style: normal;
+  font-weight: 600;
+}
+
+

@@ -4,89 +4,92 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+  <section class="news-list">
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+<article class="news-item">
+    <div class="news-date">May 2026</div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+    <h2>Postdoctoral Research Associates Symposium!</h2>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
+    <p>
+I am serving as one of the PDRA representatives from the SBBS at QMUL, I helped to organize the 5th PDRA Symposium. It was two nice days of postdoc presentations and career discussion. Of course, everything ended up with a pint! Looking forward to the next edition.      </br><a href= "https://www.qmul.ac.uk/sbbs/research/postdoctoral-research-community/resources/sbbs-pdra-symposium/" style="color: #0f4c5c; text-decoration: underline;" target="_blank">SBBS PDRA commmunity </a>
+    </p>
+  </article>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+<article class="news-item">
+    <div class="news-date">September 2025</div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
+    <h2>New start as MSCA fellow in Alex de Mendoza lab at Queen Mary University of London</h2>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
+    <p>
+       Thrilled to share that I just moved to London 🇬🇧 to start this journey! My project will investigate the role of small RNAs in immunity and regulation of giant endogenous viral elements in eukaryotes. Let's go #SMALLGIANT!
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
+    </p>
+  </article>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
+  <article class="news-item">
+    <div class="news-date">August 2025</div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
+    <h2>Thanks to Corradi Lab!</h2>
+
+    <p>
+      After three years at the University of Ottawa, I said goodbye to the Corradi Lab. During this period, I investigated transposable elements and genome evolution in arbuscular mycorrhizal fungi, contributing to studies on TE dynamics, genome architecture, and fungal evolution. Most importantly, I leave with lasting collaborations and friendships.
+    </p>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">March 2025</div>
+
+    <h2>Genome Biology and Evolution publication</h2>
+
+    <p>
+      Our study on transposable element evolution across 24 arbuscular mycorrhizal fungal species was published in Genome Biology and Evolution. We found that effector genes are frequently associated with TE-rich genomic regions, revealing evolutionary parallels between AMF and filamentous plant pathogens.
+    </p>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">February 2025</div>
+
+    <h2>Future Marie Skłodowska-Curie Fellow</h2>
+
+    <p>
+      I was awarded a Marie Skłodowska-Curie Postdoctoral Fellowship and will join Alex de Mendoza's lab at Queen Mary University of London. The SMALLGIANT project will investigate the evolution of small RNAs associated with endogenous giant viruses in unicellular eukaryotes.
+    </p>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">November 2024</div>
+
+    <h2>Best Presentation Award at the First Brazilian Conference for Evolutionary Biology</h2>
+
+    <p>
+      I received the award for Best Presentation in the Genes and Genomes section during the First Brazilian Conference for Evolutionary Biology, an event that also marked the foundation of the Brazilian Society for Evolutionary Biology.
+    </p>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">July 2024</div>
+
+    <h2>Presentation at SMBE 2024</h2>
+
+    <p>
+      I presented my research at the Society for Molecular Biology and Evolution meeting. Although I participated virtually, it was a valuable opportunity to share my work and connect with the evolutionary genomics community.
+    </p>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">June 2024</div>
+
+    <h2>Oral Presentation at the Mycological Society of America Meeting</h2>
+
+    <p>
+      I presented ongoing work on transposable element evolution in arbuscular mycorrhizal fungi, highlighting how repetitive DNA contributes to genome variability, adaptation, and gene regulation in these important plant symbionts.
+    </p>
+  </article>
+
+</section>
+
+</section>
+
+ 
 </BaseLayout>

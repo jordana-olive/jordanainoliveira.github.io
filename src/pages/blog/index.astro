@@ -1,0 +1,77 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import createSlug from "../../lib/createSlug";
+
+const posts = await getCollection("blog");
+
+posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="Ensaios de uma cientista" sideBarActiveItemID="blog">
+  <section class="blog-list">
+  <img
+  src="/hero_blog1.png"
+  alt="Overview of Amoebidium genome architecture"
+  class="my-8 rounded-lg"
+/>
+    <h1 class="text-4xl font-bold mb-10 text-[#630249]">
+      Ensaios de uma cientista
+    </h1>
+
+    <section class="author-box">
+  <img
+    src="/jor_neve.jpg"
+    alt="Jordana Oliveira"
+    class="author-photo"
+  />
+
+  <div>
+    <h2>Quem escreve?</h2>
+
+    <p>
+      Olá! Sou Jordana Oliveira, Bióloga e Doutora em Genética. Atualmente estou como Marie Curie Fellow na Queen Mary University of London, 
+      estudando evolução de pequenos RNAs associados a vírus gigantes incorporados a genomas de amebas (\o/). 
+      Fora do laboratório continuo sendo cientista e observando o mundo de forma livre. Escrevo aqui essas reflexões. 
+    </p>
+
+    <blockquote>
+      “If you know you are on the right track, if you have this inner knowledge,
+      then nobody can turn you off... no matter what they say.”
+      <br />
+      <span>— Barbara McClintock</span>
+    </blockquote>
+  </div>
+</section>
+
+    {
+  await Promise.all(
+    posts.map(async (post) => {
+      const { Content } = await post.render();
+
+      return (
+        <article class="news-item">
+          <div class="news-date">
+            {post.data.pubDate.toLocaleDateString("pt-BR", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </div>
+
+          <h2>{post.data.title}</h2>
+
+          <div class="prose prose-lg max-w-[750px]">
+            <Content />
+          </div>
+
+          <div class="essay-separator"></div>
+        </article>
+      );
+    })
+  )
+}
+  </section>
+</BaseLayout>
