@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-site: 'https://jordana-olive.github.io',
-base: '/jordanainoliveira.github.io',
+  site: 'https://jordana-olive.github.io',
+  base: '/jordanainoliveira.github.io',
+  integrations: [mdx(), sitemap(), tailwind()]
 });
