@@ -148,10 +148,11 @@
   background: #fafafa;
 }
 
-.author-photo {
-  width: 200%;
-  max-width: 900px;
-  border-radius: 12px;
+.author-box {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 .author-box h2 {
@@ -181,4 +182,18 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .author-box {
+    grid-template-columns: 1fr;
+  }
+
+  .author-photo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .author-text {
+    text-align: left;
+  }
+}
 
