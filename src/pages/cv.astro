@@ -7,6 +7,32 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <section class="news-list">
 
 <article class="news-item">
+    <div class="news-date">Jun 2026</div>
+
+    <h2>RNA-guided genome protection</h2>
+
+    <p>
+What a nice time in Caux, Switzerland🇨🇭! I presented my fresh results on the evolutionary diversification of RNAi and the regulation of endogenous giant viruses at the <b>RNAi-guided genome protection</b>. Like a dream come true, meeting all the small RNA guys I've cited in my work since 2016!</a>
+  <div class="news-gallery">
+  <button onclick="document.getElementById('news-img-1').showModal()">
+    <img src="/rnaconf3.jpg" alt="MSCA Fellowship announcement" />
+  </button>
+
+  <button onclick="document.getElementById('news-img-2').showModal()">
+    <img src="/rnaconf2.jpg" alt="Marie Curie Private sign in Ottawa" />
+  </button>
+</div>
+
+<dialog id="news-img-1" class="image-modal" onclick="this.close()">
+  <img src="/rnaconf3.jpg" alt="MSCA Fellowship announcement" />
+</dialog>
+
+<dialog id="news-img-2" class="image-modal" onclick="this.close()">
+  <img src="/rnaconf2.jpg" alt="Marie Curie Private sign in Ottawa" />
+</dialog>
+
+
+<article class="news-item">
     <div class="news-date">May 2026</div>
 
     <h2>Postdoctoral Research Associates Symposium!</h2>
